@@ -5,6 +5,7 @@ MODULE_LICENSE("GPL");
 
 static char* who = "anonymous";
 module_param(who, charp, 0000);
+MODULE_PARM_DESC(who, "name used to customize greeting");
 
 static int hello_init(void)
 {
